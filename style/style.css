@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    width: 30%;
+}
+
+h1, main{
+    margin: 1rem;
+}
+
+div.wrapper{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+ul li{
+    padding: .3rem .3rem;
+    margin: .2rem;
+    border: 1.5px solid rgb(81, 206, 255);
+    border-radius: 5px;
+    box-shadow: rgba(128, 128, 128, 0.445);
+    font-size: 1.5rem;
+}
+
+ul li:hover{
+    background-color: rgba(128, 128, 128, 0.418);
+}
+
+.line-through{
+    text-decoration: line-through;
+}

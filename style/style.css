@@ -33,14 +33,15 @@ ul{
 ul li{
     padding: .3rem .3rem;
     margin: .2rem;
-    border: 1.5px solid rgb(81, 206, 255);
+    border: 1.5px solid rgb(7, 85, 116);
+    background-color: rgb(231, 248, 255);
     border-radius: 5px;
     box-shadow: rgba(128, 128, 128, 0.445);
     font-size: 1.5rem;
 }
 
 ul li:hover{
-    background-color: rgba(128, 128, 128, 0.418);
+    background-color: rgb(149, 189, 206);
 }
 
 .line-through{

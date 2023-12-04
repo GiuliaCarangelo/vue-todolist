@@ -1,5 +1,6 @@
 const { createApp } = Vue;
 
+
 const app = createApp({
     data() {
         return {
@@ -41,13 +42,17 @@ const app = createApp({
         };
     },
     methods: {
-        addProduct(game) {
-            if (game.done === true) {
-                this.gameWishList.text
-            }
-        },
         removeProduct(game){
             this.gameWishList.splice(game, 1);
+        },
+        addProduct() {
+            if (this.newProduct.trim() !== '') { 
+                this.gameWishList.push({
+                    text: this.newProduct,
+                    done: false 
+                });
+                this.newProduct = '';
+            }
         },
     },
 });

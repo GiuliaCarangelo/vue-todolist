@@ -45,11 +45,11 @@ const app = createApp({
             if (game.done === true) {
                 this.gameWishList.text
             }
-        }
-    },
+        },
         removeProduct(game){
             this.gameWishList.splice(game, 1);
-        }
+        },
+    },
 });
 
 app.mount('#app');

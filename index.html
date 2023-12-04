@@ -21,7 +21,7 @@
             <div id="app">
                 <div class="submit-task">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" v-model="newProduct" placeholder="Type product's name"
+                        <input type="text" class="form-control" @keyup.enter="addProduct" v-model="newProduct" placeholder="Type product's name"
                             aria-label="product's name" aria-describedby="button-addon2">
                         <button @click="addProduct" class="btn btn-outline-secondary" type="button" id="add-task-btn">Add Product</button>
                     </div>
